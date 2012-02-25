@@ -15,7 +15,7 @@ class GherkinHighlighter {
 
     public static function init(){
 		wp_register_script( 'syntaxhighlighter-brush-gherkin', 
-                            plugins_url('gherkin-highlighter/shBrushGherkin.js'),
+                            plugins_url('gherkin-syntax-for-syntaxhighlighter-evolved/shBrushGherkin.js'),
                             array('syntaxhighlighter-core'),
                             '20111219.1' );
         add_filter('syntaxhighlighter_brushes',array('GherkinHighlighter','gherkin_lang'));
